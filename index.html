@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavan Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image1.jpeg" type="image/x-icon">
+</head>
+<body>
+
+    <!-- LOGIN SECTION -->
+    <div id="login-section" class="center-box">
+        <h1>Pavan Student Portal</h1>
+        <h3>Login</h3>
+
+        <label>Username</label>
+        <input type="text" id="user" placeholder="Enter username">
+
+        <label>Password</label>
+        <input type="password" id="pass" placeholder="Enter password">
+
+        <button onclick="login()">Login</button>
+
+        <div id="login-message"></div>
+    </div>
+
+    <!-- DASHBOARD SECTION -->
+    <div id="dashboard">
+        <div class="top-bar">
+            <h2>Welcome, <span id="student-name">Pavan</span> <span class="badge">Online</span></h2>
+        </div>
+
+        <div class="content-area">
+            <div class="info">
+                <h3>Student Details</h3>
+                <p><b>Name:</b> <span id="dash-name">Akula Hema Sankar Pavan Kumar</span></p>
+                <p><b>Course:</b> MCA</p>
+                <p><b>Semester:</b> 3rd Sem</p>
+                <p><b>College:</b> Your College Name</p>
+            </div>
+
+            <div class="info">
+                <h3>Quick Info</h3>
+                <ul>
+                    <li>Mini Project: Student Portal</li>
+                    <li>Technologies: HTML, CSS, JavaScript</li>
+                    <li>Next: Theme Toggle / More Modules</li>
+                </ul>
+            </div>
+
+            <!-- MARKS CALCULATOR SECTION -->
+            <div class="info">
+                <h3>Marks Calculator</h3>
+
+                <label>Subject 1</label>
+                <input type="number" id="m1" placeholder="Enter marks">
+
+                <label>Subject 2</label>
+                <input type="number" id="m2" placeholder="Enter marks">
+
+                <label>Subject 3</label>
+                <input type="number" id="m3" placeholder="Enter marks">
+
+                <label>Subject 4</label>
+                <input type="number" id="m4" placeholder="Enter marks">
+
+                <label>Subject 5</label>
+                <input type="number" id="m5" placeholder="Enter marks">
+
+                <button onclick="calculateMarks()">Calculate Result</button>
+
+                <p id="marks-output"></p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
